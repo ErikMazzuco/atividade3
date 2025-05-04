@@ -13,7 +13,7 @@ Este projeto foi desenvolvido para a disciplina de **Dispositivos Móveis** com 
 
 ///preencher
 - ⚠️ Implementar o Gitpod.
-- 🛍️ Cartão de produto com efeito de mola ao toque.
+- 🛍️ Lauchscreen, Splashscreen e OnBoarding.
 - ⚙️ Uso de `SpringSimulation` com `mass: 1`, `stiffness: 100`, `damping: 10`.
 - 🔁 Animação suave com `AnimatedBuilder` e `Transform.translate`.
 - 📱 Layout responsivo e organizado.
@@ -22,22 +22,15 @@ Este projeto foi desenvolvido para a disciplina de **Dispositivos Móveis** com 
 ## 📦 Estrutura do Projeto
 ```
 lib/
-├── animations/
-│   └── spring_controller.dart        # Lógica de animação isolada
-├── core/                             # Arquivos de configuração e utilitários
-│   ├── themes.dart                   # Definições de temas (cores, fontes)
-│   └── routes.dart                   # Definições de rotas
-├── models/                           # Modelos de dados usados no app
-├── modules/                          # Módulos principais do app (organizados por funcionalidade)
-│   ├── home/                         # Tela inicial e lógica da home
-│   └── splash/                       # Tela de splash e inicialização
-│       ├── splash_controller.dart    # Tela de Carregamento
-│       └── splash_screen.dart        # Tela de Carregamento
-└── widgets/                          # Widgets reutilizáveis em várias partes do app
-│       ├── animated_product_card.dart# Card com animação de mola
-│       ├── drawer_widget.dart        # Barra lateral
-│       └── appbar_widget.dart        # App bar com carrinho de venda
-
+├── screens/
+│   ├── onboarding/
+│   │   └──onboarding_page.dart 
+│   ├── splash/
+│   │   └──flutter_splash_page.dart   
+│   │   └──native_splash_page.dart   
+│   ├── welcome/
+│       └──welcome_page.dart          # Boas Vindas
+│   
 ├── main.dart                         # Ponto de entrada do aplicativo
 ```
 
